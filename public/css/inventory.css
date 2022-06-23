@@ -1,0 +1,61 @@
+*{
+    padding :auto ;
+    margin  :auto ;
+}
+
+body{
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fff;
+}
+
+p{
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+h2{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+h3{
+    font : #fff;
+    font-size: 17px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #fff;
+}
+
+h4{
+    font : white;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.buku {
+    padding: 0 6px;
+    margin-right: 10px;
+    float: left;
+    border:1px solid #dedede;
+    width: 17.5%;
+}
+
+.foto img {
+    padding:5px 0 5px 0;
+    width: 180px;
+    height: 250px;
+}
+
+.judul {
+    font-size: 13px;
+    font-weight: 600;
+    padding:0 0 3px 0;
+    text-align: left;
+} 
+
+.penulis{
+    font-size:10px;
+    padding-bottom: 5px;
+}
+
