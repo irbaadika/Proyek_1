@@ -12,6 +12,6 @@ class DashboardController extends Controller
     {
         $user = DB::select("SELECT * FROM users");
         return view('dashboard', compact('user'));
-
     }
+    
 }

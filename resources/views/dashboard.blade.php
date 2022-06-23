@@ -76,8 +76,7 @@
                                             <th scope="col">ID</th>
                                             <th scope="col">Nama</th>
                                             <th scope="col">level</th>
-                                            <td></td>
-                                            <th scope="col">edit/delet</th>
+                                            <th scope="col">edit/delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -86,10 +85,15 @@
                                                 <th scope="row">{{ $item->id }}</th>
                                                 <td>{{ $item->name }}</td>
                                                 <td>{{ $item->email }}</td>
-                                                <td></td>
-                                                <td>
-                                                    <button type="button" class="btn btn-warning">Edit</button>
-                                                    <a href="hapusUser/{{ $item->id }}" class="btn btn-danger">Hapus</a>
+
+                                                <td class="row">
+                                                    <a type="button" href="tambah/{{ $item->id }}/edit" class="btn btn-warning col-4">Edit</a>
+                                                    <!-- <a href="hapusUser/{{ $item->id }}" class="btn btn-danger">Hapus</a> -->
+                                                    <form action="tambah/{{ $item->id }}" class="col-4" method="POST">
+                                                        @method('delete')
+                                                        @csrf
+                                                        <button class="btn btn-danger" onclick="return confirm('beneran mau hapus?')">Hapus</button>
+                                                    </form>
                                                 </td>
                                             </tr>
                                         @endforeach

@@ -3,8 +3,8 @@
 <div class="row justify-content-center">
     <div class="col-lg-5">
         <main class="form-registration">
-            <h1 class="h3 mb-3 fw-normal text-center">REGISTRATION FORM</h1>
-            <form action="/register1" method="post">
+            <h1 class="h3 mb-3 fw-normal text-center">Silakkan menginputkan data</h1>
+            <form action="/tambah" method="post">
             @csrf
             <div class="form-floating">
                 <input type="text" name='name' class="form-control rounded-top" @error('name') is-invalid
@@ -39,9 +39,8 @@
                 @enderror
             </div>
         
-            <button class="w-100 btn btn-lg btn-primary mt-2" type="submit">Register</button>
+            <button class="w-100 btn btn-lg btn-primary mt-2" type="submit">Submit</button>
             </form>
-            <small class="d-block text-center mt-3"><a href="/login">Login!</a></small>
         </main>
     </div>
 </div>

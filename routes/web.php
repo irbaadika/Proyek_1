@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\TambahController;
 use App\Http\Controllers\DashboardController;
 
 
@@ -22,9 +23,9 @@ use App\Http\Controllers\DashboardController;
 // Route::get('/home', function () {
 //     return view('home');
 // });
-// Route::get('/inventory', function () {
-//     return view('inventory');
-// });
+Route::get('/inventory', function () {
+  return view('inventory');
+});
 // Route::get('/login', function () {
 //     return view('login');
 // });
@@ -32,10 +33,23 @@ use App\Http\Controllers\DashboardController;
 //     return view('register');
 // });
 
-Route::get('/login', [LoginController::class, 'index'])->name('login') ->middleware('guest');
-Route::post('/login', [LoginController::class, 'authenticate']);
+Route::get('/login', function () {
+    return view('login');
+})->name("login");
+Route::post('login1', [LoginController::class, 'authenticate']);
+
 Route::post('/logout', [LoginController::class, 'logout']);
-Route::get('register', [RegisterController::class, 'register'])->name('register');
+
+Route::get('/register', function () {
+    return view('register');
+})->name("register");
+Route::post('register1', [RegisterController::class, 'register']);
+
+// Route::get('/tambah', function () {
+//     return view('tambah');
+// })->name("tambah");
+
+Route::resource('/tambah', TambahController::class);
 
 
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
