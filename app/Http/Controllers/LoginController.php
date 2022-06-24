@@ -22,9 +22,38 @@ class LoginController extends Controller
 
         if(Auth::attempt($credentials)){
             $request->session()->regenerate();
+            if(Auth::user()->verify === 0 ){
+                Auth::logout();
+                return back()->with('loginError','Login Failed!!! Hubungi admin untuk verifikasi akun anda agar bisa login!');
+            }
+            if(auth()->user()->role == 'admin')
             return redirect()->intended('/dashboard');
+            else
+            return redirect()->intended('/user');
         }
         return back()->with('loginError', 'Login failed!');
+    }
+
+    public function verify(Request $request, User $user){
+      
+        $user = User::find($request)->first();
+        if($user){
+            $user->verify = '1';
+            $user->save();
+        }
+
+        return redirect('/dashboard/adminUser');
+    }
+
+    public function block(Request $request){
+       
+        $user = User::find($request)->first();
+        if($user){
+            $user->verify = '0';
+            $user->save();
+        }
+
+        return redirect('/dashboard/adminUser');
     }
 
     public function logout(Request $request){

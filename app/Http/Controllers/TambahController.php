@@ -44,7 +44,7 @@ class TambahController extends Controller
         
         // dd(echo "masuk");
         $user = DB::select("SELECT * FROM users");
-        return view('dashboard', compact('user'));
+        return view('dashboard.index', compact('user'));
     }
 
     /**
@@ -96,9 +96,9 @@ class TambahController extends Controller
         ->where('id', $id)
         ->update($update_details);
 
-        return redirect('/dashboard');
+        return redirect('/dashboard.index');
 
-        // return view('dashboard', [
+        // return view('dashboard.index', [
         //     'user' => User::all(),
         // ]);
     }
@@ -112,6 +112,6 @@ class TambahController extends Controller
     public function destroy($id)
     {
         User::destroy($id);
-        return redirect('dashboard');
+        return redirect('dashboard.index');
     }
 }
