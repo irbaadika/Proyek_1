@@ -54,7 +54,8 @@ class DashboardInventoryController extends Controller
             'penulis' => 'required|max:100',
             'category_id' => 'required',
             'image' => 'image|file|max:1024',
-            'desc' => 'required'
+            'desc' => 'required',
+            'link' => ''
         ]);
 
         if($request->file('image')){
@@ -109,7 +110,8 @@ class DashboardInventoryController extends Controller
             'title' => 'required|max:255',
             'penulis' => 'required|max:100',
             'category_id' => 'required',
-            'desc' => 'required'
+            'desc' => 'required',
+            'link' => ''
         ];
 
         

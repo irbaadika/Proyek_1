@@ -52,7 +52,12 @@
                         <input id="desc" type="hidden" name="desc">
                         <trix-editor input="desc"></trix-editor>
                     </div>
-        
+                    
+                    <div class="mb-3">
+                        <label for="link" class="form-label">Link</label>
+                        <input type="text" class="form-control" id="link" name="link">
+                    </div>
+
                     <button type="submit" class="btn btn-primary">Create Inventory</button>
                 </form>
             </div>

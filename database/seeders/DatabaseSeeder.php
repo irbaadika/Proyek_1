@@ -41,7 +41,8 @@ class DatabaseSeeder extends Seeder
             'category_id' => 1,
             'penulis' => 'Andrea Hirata',
             'pendek' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis.',
-            'desc' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis. Deserunt, praesentium incidunt animi, totam dignissimos maiores numquam perferendis dolores eaque vero voluptatum iure vel odio in dolorem ipsum ratione repellendus necessitatibus ad nemo magni officia cumque facilis? Quia, non quos neque fugiat inventore tempora!'
+            'desc' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis. Deserunt, praesentium incidunt animi, totam dignissimos maiores numquam perferendis dolores eaque vero voluptatum iure vel odio in dolorem ipsum ratione repellendus necessitatibus ad nemo magni officia cumque facilis? Quia, non quos neque fugiat inventore tempora!',
+            'link' => 'https://urlis.net/mazpy'
         ]);
         Inventory::create([
             'title' => 'Bumi Manusia',
@@ -49,7 +50,8 @@ class DatabaseSeeder extends Seeder
             'category_id' => 1,
             'penulis' => 'Pramoedya Ananta Toer',
             'pendek' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis.',
-            'desc' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis. Deserunt, praesentium incidunt animi, totam dignissimos maiores numquam perferendis dolores eaque vero voluptatum iure vel odio in dolorem ipsum ratione repellendus necessitatibus ad nemo magni officia cumque facilis? Quia, non quos neque fugiat inventore tempora!'
+            'desc' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis. Deserunt, praesentium incidunt animi, totam dignissimos maiores numquam perferendis dolores eaque vero voluptatum iure vel odio in dolorem ipsum ratione repellendus necessitatibus ad nemo magni officia cumque facilis? Quia, non quos neque fugiat inventore tempora!',
+            'link' => 'https://urlis.net/4r24m'
         ]);
         Inventory::create([
             'title' => 'Negeri 5 Menara',
@@ -57,7 +59,8 @@ class DatabaseSeeder extends Seeder
             'category_id' => 1,
             'penulis' => 'A. Fuadi',
             'pendek' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis.',
-            'desc' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis. Deserunt, praesentium incidunt animi, totam dignissimos maiores numquam perferendis dolores eaque vero voluptatum iure vel odio in dolorem ipsum ratione repellendus necessitatibus ad nemo magni officia cumque facilis? Quia, non quos neque fugiat inventore tempora!'
+            'desc' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis. Deserunt, praesentium incidunt animi, totam dignissimos maiores numquam perferendis dolores eaque vero voluptatum iure vel odio in dolorem ipsum ratione repellendus necessitatibus ad nemo magni officia cumque facilis? Quia, non quos neque fugiat inventore tempora!',
+            'link' => 'https://urlis.net/nek2k'
         ]);
         Inventory::create([
             'title' => 'Doraemon Vol 1',
@@ -65,7 +68,8 @@ class DatabaseSeeder extends Seeder
             'category_id' => 2,
             'penulis' => 'Fujiko Fujio',
             'pendek' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis.',
-            'desc' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis. Deserunt, praesentium incidunt animi, totam dignissimos maiores numquam perferendis dolores eaque vero voluptatum iure vel odio in dolorem ipsum ratione repellendus necessitatibus ad nemo magni officia cumque facilis? Quia, non quos neque fugiat inventore tempora!'
+            'desc' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis. Deserunt, praesentium incidunt animi, totam dignissimos maiores numquam perferendis dolores eaque vero voluptatum iure vel odio in dolorem ipsum ratione repellendus necessitatibus ad nemo magni officia cumque facilis? Quia, non quos neque fugiat inventore tempora!',
+            'link' => 'https://urlis.net/7s4jo'
         ]);
         Inventory::create([
             'title' => 'Doraemon Vol 2',
@@ -73,7 +77,8 @@ class DatabaseSeeder extends Seeder
             'category_id' => 2,
             'penulis' => 'Fujiko Fujio',
             'pendek' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis.',
-            'desc' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis. Deserunt, praesentium incidunt animi, totam dignissimos maiores numquam perferendis dolores eaque vero voluptatum iure vel odio in dolorem ipsum ratione repellendus necessitatibus ad nemo magni officia cumque facilis? Quia, non quos neque fugiat inventore tempora!'
+            'desc' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam maiores velit inventore. Asperiores, corporis. Deserunt, praesentium incidunt animi, totam dignissimos maiores numquam perferendis dolores eaque vero voluptatum iure vel odio in dolorem ipsum ratione repellendus necessitatibus ad nemo magni officia cumque facilis? Quia, non quos neque fugiat inventore tempora!',
+            'link' => 'https://urlis.net/9edrp'
         ]);
     }
 }

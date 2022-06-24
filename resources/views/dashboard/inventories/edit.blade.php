@@ -28,7 +28,7 @@
                     </div>
                     
                     <div class="mb-3">
-                        <label for="penulis" class="form-label">Penulis</label>
+                        <label for="penulis" class="form-label">Link</label>
                         <input type="text" class="form-control" id="penulis" name="penulis" required value="{{ old('penulis',$inventory->penulis) }}">
                     </div>
 
@@ -51,6 +51,11 @@
                         <label for="desc" class="form-label">Description</label>
                         <input id="desc" type="hidden" name="desc" value="{{ old('desc', $inventory->desc) }}">
                         <trix-editor input="desc"></trix-editor>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="link" class="form-label">Penulis</label>
+                        <input type="text" class="form-control" id="link" name="link" required value="{{ old('link',$inventory->link) }}">
                     </div>
         
                     <button type="submit" class="btn btn-primary">Update</button>

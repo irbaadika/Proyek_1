@@ -23,6 +23,7 @@
             <h5 class="card-title">{{ $inventories[0]->title }}</h5>
             <p>Penulis : {{ $inventories[0]->penulis }}</p>
             <p>
+                {{  $inventories[0]->category->slug }}
                 <small class="text-muted">
                     <a href="/categories/{{ $inventories[0]->category->slug }}" class="text-decoration-none">{{ $inventories[0]->category->name }}</a>
                 </small>

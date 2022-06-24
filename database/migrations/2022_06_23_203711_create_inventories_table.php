@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->text('pendek');
             $table->text('desc');
+            $table->text('link');
             $table->timestamps();
         });
     }
