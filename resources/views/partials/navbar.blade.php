@@ -12,9 +12,6 @@
           <li class="nav-item">
             <a class="nav-link {{ ($title === "Inventories") ? 'active' : '' }}" href="/inventories">Inventory</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {{ ($title === "About") ? 'active' : '' }}" href="/about">About</a>
-          </li>
         </ul>
 
         <ul class="navbar-nav ms-auto">

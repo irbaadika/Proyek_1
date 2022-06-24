@@ -14,7 +14,6 @@
             <div class="menu">
                 <ul>
                     <li><a href="/inventory" class="tbl-satu">Inventory</a></li>
-                    <li><a href=""  class="tbl-satu">Pencarian</a></li>
                     <li><a href="/login"  class="tbl-satu">Login</a></li>
                 </ul>
         </div>
